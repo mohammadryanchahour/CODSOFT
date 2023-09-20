@@ -26,7 +26,16 @@ export default function Header() {
 
   return (
     <header>
-      <Link to="/" className="logo">{username}'s Blog</Link>
+      {username &&(
+        <>
+          <Link to="/" className="logo">{username}'s Blog</Link>
+        </>
+      )}
+      {!username && (
+        <>
+          <Link to="/" className="logo">Blog Application</Link>
+        </>
+      )}
       <nav>
         {username && (
           <>
