@@ -19,8 +19,8 @@ app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
 
-mongoose.connect('mongodb+srv://blog:RD8paskYC8Ayj09u@cluster0.pflplid.mongodb.net/?retryWrites=true&w=majority');
-
+mongoose.connect('mongodb+srv://mern-blog:n11tvNi7amQ5fRGR@cluster0.rxqt1yh.mongodb.net/?retryWrites=true&w=majority');
+// koZQaw8rE2bIDwGk
 app.post('/register', async (req,res) => {
   const {username,password} = req.body;
   try{
